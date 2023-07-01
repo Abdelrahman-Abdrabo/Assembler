@@ -1,0 +1,17 @@
+AND r1,r6,r5
+OR r0,r5,r1
+Add r0,r5,r1
+XOR r5,r6,r6
+WHILE:
+ROR r0,r6,10
+ORI r6,r6,20
+#this is a comment to test comments
+SW r0,r0,15
+ANOTHER:
+LW r0,r6,10
+BEQ r0,r2,WHILE
+BEQZ r5,WHILE
+JR r5,60
+SET r6,13
+J WHILE
+JAL ANOTHER
